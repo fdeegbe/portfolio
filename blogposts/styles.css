@@ -17,12 +17,24 @@ h1 {
     font-size: 36px;
     margin: 0;
 }
+h2 {
+    background-color: #4CAF50; /* Background color (green in this example) */
+    color: #fff; /* Text color (white in this example) */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners for a button-like effect */
+    text-align: center; /* Center-align the text */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-size: 24px; /* Adjust the font size as needed */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
 
 .post-content {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 15px auto;
+    padding: 50px;
     background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,4 +54,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    border: 2px solid #4CAF50;
+    box-shadow: 5px 10px 10px #3b623d;
 }
