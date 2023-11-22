@@ -1,11 +1,14 @@
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
 
 function App() {
+  
   return (
-  <div className="font-sans-serif text-7xl">
-    Frank Deegbe's Portfolio
+    <div>
+      <Navbar/>
     </div>
 
-  )
+  );
 }
 
-export default App
+export default App;

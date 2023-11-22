@@ -8,20 +8,28 @@ export default {
   theme: {
     extend: {
       colors: {
-        'text': '#050201',
-        'background': '#ffffff',
-        'primary': '#f2b891',
-        'secondary': '#f6d0b6',
-        'accent': '#c95e18',
-        'secondbackground': '#f7f7f7'
+        'text': '#180202',
+        'background': '#fafafa',
+        'primary': '#ff6d4d',
+        'secondary': '#e6e6e5',
+        'accent': '#d12600',
        },
       fontFamily: {
-        playfair: ["Playfair Display", "serif"],
-        opensans: ["Open Sans", "sans-serif"],
-        spacegrotesque: ['Space-Grotesk', "space"]
+        heading: 'Overpass Mono',
+        body: 'Overpass Mono',
       },
-      content: {
-
+      fontSize: {
+        sm: '0.618rem',
+        base: '1rem',
+        xl: '1.618rem',
+        '2xl': '2.618rem',
+        '3xl': '4.236rem',
+        '4xl': '6.854rem',
+        '5xl': '11.090rem',
+      },
+      fontWeight: {
+        normal: '400',
+        bold: '700',
       },
     },
     screens: {

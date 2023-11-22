@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anek Bangla:700|Anek Bangla:400');
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 html,
 body,
 #root,
 .app {
   height: 100%;
-  background-color: #bdb0d1;
-  color: #72000098;
+  background-color: #fafafa;
+  color: #180202;
 }
-
