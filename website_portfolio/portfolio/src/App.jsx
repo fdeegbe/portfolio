@@ -1,19 +1,31 @@
 import { useCallback } from "react";
-// import Particles from "react-particles";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
-import ParticlesContainer from "./components/ParticlesContainer";
-import Navbar from "./components/Navbar";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import { ParticleBackground, Navbar, Title } from "./components";
+import { Header, Footer } from  "./containers"
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <div style={{ zIndex: 1 }}>
-        <ParticlesContainer />
+    <div className='bg bg-auto bg-black'>
+      <Header/>
+      <ParticleBackground/>
+      <Navbar/>
+
+    <div className="min-h-screen flex-col ml-[15%]">  {/* w-screen lg:w-[70%] for head start on dynamic */}
+          <div className="h-screen">
+            <Title/>
+            
+          </div>
+          <div className="">
+          </div>  
+
       </div>
+      
+      <Footer/>
     </div>
   );
 };
 
 export default App
+
+// npm install react-icons

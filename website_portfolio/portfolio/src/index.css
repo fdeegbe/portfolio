@@ -4,12 +4,14 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-/* 
+
 html,
 body,
 #root,
 .app {
   height: 100%;
-  background-color: #fafafa;
+  background-color: #000000;
   color: #180202;
-} */
+}
+
+/* @media screen and (max-width: 700px) */
