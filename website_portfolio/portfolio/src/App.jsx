@@ -1,27 +1,23 @@
-import { useCallback } from "react";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import { ParticleBackground, Navbar, Title } from "./components";
-import { Header, Footer } from  "./containers"
+import { ParticleBackground, Navbar, Title, Skills, WorkExperience } from "./components";
 
 const App = () => {
   return (
-    <div className='bg bg-auto bg-black'>
-      <Header/>
-      <ParticleBackground/>
-      <Navbar/>
+    <div className='bg bg-auto bg-background'>
+      <ParticleBackground />
+      <div className="">
+        <Navbar />
 
-    <div className="min-h-screen flex-col ml-[15%]">  {/* w-screen lg:w-[70%] for head start on dynamic */}
-          <div className="h-screen">
-            <Title/>
-            
-          </div>
-          <div className="">
-          </div>  
-
-      </div>
-      
-      <Footer/>
+        <div className="flex flex-col p-px grow">  {/* w-screen lg:w-[70%] for head start on dynamic */}
+          <Title />
+          <div className="h-80" />
+          <WorkExperience />
+          <div className="h-80" />
+          <Skills />
+          <div className="h-80"/>
+          <div className="text-white font-body text-3xl break-words md:text-4xl text-center" >More Coming Soon!</div>
+        </div>
+        <div className="h-80"/>
+      </div>  
     </div>
   );
 };
@@ -29,3 +25,10 @@ const App = () => {
 export default App
 
 // npm install react-icons
+// add animations to title icons
+// add cooler word font color and stuff
+// make picture better
+// fix navbar and add icons to make it cool ig
+// media query stuff to make stuff smaller on mobile
+// too small
+// mobject fit/ posisition for the pfp?

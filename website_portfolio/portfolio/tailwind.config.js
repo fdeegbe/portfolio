@@ -3,20 +3,38 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   mode: "jit",
   theme: {
     extend: {
-      colors: {
+      zIndex: {
+        '1': '1',
+        '100': '100',
+      },
+      spacing: {
+        '5rem': '5rem',
+        '6rem': '6rem',
+        '10rem': '10rem',
+        '14rem': '14rem',
+        '25rem': '25rem',
+        '20rem': '20rem',
+        '40rem': '40rem',
+        '100px': '100px',
+        '500px': '500px',
+      },
+      colors: { 
         'text': '#180202',
-        'background': '#fafafa',
+        'background': '#232741',
+        'altbackground': '#010b19',
         'primary': '#ff6d4d',
         'secondary': '#e6e6e5',
         'accent': '#d12600',
        },
       fontFamily: {
-        heading: 'Overpass Mono',
-        body: 'Overpass Mono',
+        heading: ['"Rubik Doodle Shadow"', 'Overpass Mono'],
+        body: ['"Rubik Doodle Shadow"', 'Overpass Mono'],
+        normal: ['Overpass Mono'],
       },
       fontSize: {
         sm: '0.618rem',

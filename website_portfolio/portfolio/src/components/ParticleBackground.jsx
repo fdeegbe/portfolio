@@ -17,7 +17,7 @@ function ParticleBackground() {
             "autoPlay": true,
             "background": {
               "color": {
-                "value": "#000000"
+                "value": "#282444"
               },
               "image": "",
               "position": "",
@@ -29,7 +29,7 @@ function ParticleBackground() {
               "composite": "destination-out",
               "cover": {
                 "color": {
-                  "value": "#fff"
+                  "value": "#282444"
                 },
                 "opacity": .0
               },
@@ -338,7 +338,7 @@ function ParticleBackground() {
                   "mode": "delete",
                   "value": 0
                 },
-                "value": 150
+                "value": 120,
               },
               "opacity": {
                 "value": 1,
@@ -373,7 +373,7 @@ function ParticleBackground() {
                 "type": "star"
               },
               "size": {
-                "value": 3,
+                "value": 6,
                 "animation": {
                   "count": 0,
                   "enable": false,
@@ -528,8 +528,8 @@ function ParticleBackground() {
                 "speed": 1
               }
             },
-            "pauseOnBlur": true,
-            "pauseOnOutsideViewport": true,
+            "pauseOnBlur": false,
+            "pauseOnOutsideViewport": false,
             "responsive": [],
             "smooth": false,
             "style": {},
@@ -542,7 +542,7 @@ function ParticleBackground() {
                 "wait": false
               },
               "rate": {
-                "quantity": 1,
+                "quantity": 0,
                 "delay": 7
               },
               "shape": {

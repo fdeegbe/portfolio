@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Anek Bangla:700|Anek Bangla:400');
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
@@ -8,10 +9,23 @@
 html,
 body,
 #root,
-.app {
+  .app {
   height: 100%;
-  background-color: #000000;
+  background-color: #232741;
   color: #180202;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background: #ffffff;  
+}
+
+body::-webkit-scrollbar-track {
+  background: #010b19;
+}
 /* @media screen and (max-width: 700px) */
