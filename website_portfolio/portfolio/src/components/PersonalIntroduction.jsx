@@ -26,7 +26,7 @@ const PersonalIntroduction = () => {
                 <div className="justify-center z-1 w-[200px] h-[200px] md:w-[400px] md:h-[400px] overflow-hidden rounded-full border-4 border-white">
                     <img
                         className="z-1 w-full h-full object-cover"
-                        src='src/components/images/Headshot 1.JPG'
+                        src='/images/Headshot 1.JPG'
                         alt='portrait' />
             </div>
         </div>
