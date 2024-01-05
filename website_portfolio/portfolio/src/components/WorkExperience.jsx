@@ -1,14 +1,17 @@
 import React from "react";
-import { TypeAnimation } from 'react-type-animation';
+
 
 const WorkExperience = () => {
 
 
     return (
         <div id='experience' className="">
-            <div className='text-center text-white font-body text-3xl break-words md:text-4xl'>
+            <div className='text-center text-white font-body hidden md:block break-words md:text-4xl'>
                 Experience
             </div>
+                <div className='text-center text-white text-3xl font-body md:hidden break-words'>
+                    Exp.
+                </div>
             <div className="flex flex-col items-center">
                 {/* Experience Entry 1 */}
                 <div className="text-white bg-altbackground rounded-2xl p-5 m-5 md:p-10 md:m-10rem z-1">

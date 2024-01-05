@@ -10,11 +10,13 @@ export default {
     extend: {
       zIndex: {
         '1': '1',
+        '2': '2',
         '100': '100',
       },
       spacing: {
         '5rem': '5rem',
         '6rem': '6rem',
+        '8rem': '8rem',
         '10rem': '10rem',
         '14rem': '14rem',
         '25rem': '25rem',
@@ -29,7 +31,7 @@ export default {
         'altbackground': '#010b19',
         'primary': '#ff6d4d',
         'secondary': '#e6e6e5',
-        'accent': '#d12600',
+        'accent': '#c0a3b7',
        },
       fontFamily: {
         heading: ['"Rubik Doodle Shadow"', 'Overpass Mono'],
