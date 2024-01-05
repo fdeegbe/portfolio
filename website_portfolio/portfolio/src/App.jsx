@@ -1,4 +1,4 @@
-import { ParticleBackground, Navbar, Title, Skills, WorkExperience } from "./components";
+import { ParticleBackground, Navbar, Title, Skills, WorkExperience,  PersonalIntroduction} from "./components";
 
 const App = () => {
   return (
