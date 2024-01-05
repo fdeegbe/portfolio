@@ -1,4 +1,4 @@
-import { ParticleBackground, Navbar, Title, Skills, WorkExperience,  PersonalIntroduction} from "./components";
+import { ParticleBackground, Navbar, Title, Skills, WorkExperience, PersonalIntroduction} from "./components";
 
 const App = () => {
   return (
@@ -10,6 +10,8 @@ const App = () => {
         <div className="flex flex-col p-px grow">  {/* w-screen lg:w-[70%] for head start on dynamic */}
           <Title />
           <div className="h-80" />
+          <PersonalIntroduction/>
+          <div className="h-80" />          
           <WorkExperience />
           <div className="h-80" />
           <Skills />
