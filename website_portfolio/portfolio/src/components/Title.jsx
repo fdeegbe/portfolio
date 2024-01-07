@@ -28,7 +28,7 @@ const Title = () => {
           </a>
         </li> */}
       </ul>
-      <a target='_blank' rel='noopener noreferrer' href='https://drive.google.com/file/d/1JrETMMNXsrkvFIjoIMXqHJ1-L0xTH-2N/view?usp=sharing'>
+      <a target='_blank' rel='noopener noreferrer' href='https://drive.google.com/file/d/1TxXu_T_QaTaGQv-_PfdjWlgqPDUuvAOc/view?usp=sharing'>
         <div className='text-white text-2xl p-4 rounded-3xl border border-4 transition transform hover:scale-105 mt -5 opacity-40 hover:opacity-100 '>
           Resume
         </div>

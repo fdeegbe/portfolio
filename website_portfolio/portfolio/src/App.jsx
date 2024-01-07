@@ -1,5 +1,5 @@
-import { ParticleBackground, Navbar, Title, Skills, WorkExperience, PersonalIntroduction} from "./components";
-
+import { ParticleBackground, Navbar, Title, Skills, WorkExperience, PersonalIntroduction } from "./components";
+import { Element } from 'react-scroll';
 const App = () => {
   return (
     <div className='bg bg-auto bg-background'>
@@ -8,17 +8,20 @@ const App = () => {
         <Navbar />
 
         <div className="flex flex-col p-px grow">  {/* w-screen lg:w-[70%] for head start on dynamic */}
+          <Element name="title" />
           <Title />
-          <PersonalIntroduction/>
-          <div className="h-80" />          
+          <PersonalIntroduction />
+          <Element name="experience" />
+          <div className="h-80" />
           <WorkExperience />
+          <Element name="skills" />
           <div className="h-80" />
           <Skills />
-          <div className="h-80"/>
+          <div className="h-80" />
           <div className="text-white font-body text-3xl break-words md:text-4xl text-center" >More Coming Soon!</div>
         </div>
-        <div className="h-80"/>
-      </div>  
+        <div className="h-80" />
+      </div>
     </div>
   );
 };
