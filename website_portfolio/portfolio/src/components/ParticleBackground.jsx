@@ -1,7 +1,6 @@
-import React from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { loadStarsPreset } from "tsparticles-preset-stars"; //used in our preset https://www.npmjs.com/package/tsparticles-preset-triangles
+// import { loadStarsPreset } from "tsparticles-preset-stars"; //used in our preset https://www.npmjs.com/package/tsparticles-preset-triangles
 
 function ParticleBackground() {
     async function loadParticles(main){
@@ -42,7 +41,7 @@ function ParticleBackground() {
               "enable": true,
               "zIndex": 1
             },
-            "detectRetina": true,
+            "detectRetina": false,
             "duration": 0,
             "fpsLimit": 120,
             "interactivity": {
@@ -67,10 +66,10 @@ function ParticleBackground() {
                     "smooth": 5
                   }
                 },
-                "resize": {
-                  "delay": 0.5,
-                  "enable": true
-                }
+                // "resize": {
+                //   "delay": 0.5,
+                //   "enable": true
+                // }
               },
               "modes": {
                 "trail": {
@@ -373,7 +372,7 @@ function ParticleBackground() {
                 "type": "star"
               },
               "size": {
-                "value": 6,
+                "value": 2,
                 "animation": {
                   "count": 0,
                   "enable": false,

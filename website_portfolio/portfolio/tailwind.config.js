@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       zIndex: {
+        'n1': '-1',
         '1': '1',
         '2': '2',
         '100': '100',

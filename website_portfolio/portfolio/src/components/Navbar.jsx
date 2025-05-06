@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 const Navbar = () => {
 
   return (
-    <div className='h-7rem w-screen bottom-0 flex text-white fixed z-100 bg bg-altbackground md:font-body md:h-screen md:px-5 md:text-xl md:bg md:bg-background md:w-20 md:hover:w-80 md:m-0 md:transition-all md:duration-300 md:hover:bg-altbackground md:bottom-auto'>
+    <div className='h-7rem w-screen bottom-0 flex text-white fixed bg bg-altbackground md:font-body md:h-screen md:px-5 md:text-xl md:bg md:bg-background md:w-20 md:hover:w-80 md:m-0 md:transition-all md:duration-300 md:hover:bg-altbackground md:bottom-auto'>
       <ul className='flex md:flex-col w-full justify-between items-center md:h-full md:m-0 md:justify-start md:items-start'>
         <li className='md:my-5 md:w-80'>
           <Link activeClass="active" to="title" spy={true} smooth={true} offset={50} duration={500} className='w-full h-full group flex items-center md:hover:text-opacity-100 md:transition-opacity md:duration-300'>

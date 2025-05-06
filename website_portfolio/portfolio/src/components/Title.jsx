@@ -1,9 +1,41 @@
-import React from 'react'
+import gsap from 'gsap'
+import { useGSAP } from "@gsap/react";
+import React from 'react';
+
+const { useRef } = React;
+
+gsap.registerPlugin(useGSAP);
+
 
 const Title = () => {
+  const name = useRef();
+  const container = useRef();
+  useGSAP((context, contextSafe) => {
+    gsap.to(name.current, {
+      // rotation: "+=random(360, 20, 180)",
+      rotation: "+=360",
+      duration: 3,
+      repeat: -1,
+
+    //   ease: "none",
+    });
+    console.log("context", context.data.length)
+
+  }, {scope: container, dependencies: [], revertOnUpdate: false})
+  // will only animate inside of the ref "container" and will update the animation when any dependency changes
+  // src https://www.youtube.com/watch?v=l0aI8Ecumy8 (context safe cleanup on event lsiteners)
+  // context has to do with what gets reverted/reset when dependencies are triggered (and possibly other stuff. We want our usegsap function to be "Context safe" )
+  
+  // TODO: move the gmail linkedin and githun to the navbar?
+  // on the bottom left idk. then also make my name smaller and zoom in when 
+  // i scroll down. we want to save state 
+
+  // and also maybe a effect when a link is clicked.
+  // I also want a side scroller when it gets to my 
+  // experience and also i need to fix the navbar
   return (
-    <div className='flex flex-col items-center justify-center h-screen font-body'>
-      <div className='text-center text-white text-3xl break-words md:text-4xl mt-20'>
+    <div  className='flex flex-col items-center justify-center h-screen font-body'>
+      <div ref={name} className='text-center text-white text-3xl break-words md:text-4xl mt-20'>
         Frank Deegbe
       </div>
       <ul className='flex flex-wrap items-center'>
@@ -29,7 +61,7 @@ const Title = () => {
         </li> */}
       </ul>
       <a target='_blank' rel='noopener noreferrer' href='https://drive.google.com/file/d/1TxXu_T_QaTaGQv-_PfdjWlgqPDUuvAOc/view?usp=sharing'>
-        <div className='text-white text-2xl p-4 rounded-3xl border border-4 transition transform hover:scale-105 mt -5 opacity-40 hover:opacity-100 '>
+        <div className='text-white text-2xl p-4 m-2 rounded-3xl border border-4 transition transform hover:scale-105 mt -5 opacity-40 hover:opacity-100 '>
           Resume
         </div>
       </a>

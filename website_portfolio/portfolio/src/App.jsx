@@ -2,7 +2,7 @@ import { ParticleBackground, Navbar, Title, Skills, WorkExperience, PersonalIntr
 import { Element } from 'react-scroll';
 const App = () => {
   return (
-    <div className='bg bg-auto bg-background'>
+    <div className='bg bg-auto bg-background relative'>
       <ParticleBackground />
       <div className="">
         <Navbar />
