@@ -39,7 +39,7 @@ function ParticleBackground() {
             "delay": 0,
             "fullScreen": {
               "enable": true,
-              "zIndex": 1
+              "zIndex": 10
             },
             "detectRetina": false,
             "duration": 0,
@@ -530,7 +530,7 @@ function ParticleBackground() {
             "pauseOnBlur": false,
             "pauseOnOutsideViewport": false,
             "responsive": [],
-            "smooth": false,
+            "smooth": true,
             "style": {},
             "themes": [],
             "zLayers": 100,

@@ -4,3 +4,4 @@ export { default as Title } from "./Title";
 export { default as Skills } from "./Skills";
 export { default as WorkExperience } from "./WorkExperience";
 export { default as PersonalIntroduction } from "./PersonalIntroduction";
+export { default as Timeline } from "./Timeline";

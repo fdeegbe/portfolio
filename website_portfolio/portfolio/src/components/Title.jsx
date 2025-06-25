@@ -1,10 +1,12 @@
 import gsap from 'gsap'
 import { useGSAP } from "@gsap/react";
 import React from 'react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const { useRef } = React;
 
 gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const Title = () => {
@@ -12,12 +14,16 @@ const Title = () => {
   const container = useRef();
   useGSAP((context, contextSafe) => {
     gsap.to(name.current, {
-      // rotation: "+=random(360, 20, 180)",
-      rotation: "+=360",
-      duration: 3,
-      repeat: -1,
-
-    //   ease: "none",
+      duration: 2,
+      scale: 2,
+      opacity: 0.1,
+      scrub: 1,
+      scrollTrigger:{
+        trigger: name.current,
+        start: "center center", // when the [0] object hits the [1] viewport
+        // markers: true,
+        scrub: true,
+      },
     });
     console.log("context", context.data.length)
 
@@ -60,11 +66,11 @@ const Title = () => {
           </a>
         </li> */}
       </ul>
-      <a target='_blank' rel='noopener noreferrer' href='https://drive.google.com/file/d/1TxXu_T_QaTaGQv-_PfdjWlgqPDUuvAOc/view?usp=sharing'>
+      {/* <a target='_blank' rel='noopener noreferrer' href='https://drive.google.com/file/d/1TxXu_T_QaTaGQv-_PfdjWlgqPDUuvAOc/view?usp=sharing'>
         <div className='text-white text-2xl p-4 m-2 rounded-3xl border border-4 transition transform hover:scale-105 mt -5 opacity-40 hover:opacity-100 '>
           Resume
         </div>
-      </a>
+      </a> */}
     </div>
 
   )

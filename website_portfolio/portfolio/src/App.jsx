@@ -1,8 +1,8 @@
-import { ParticleBackground, Navbar, Title, Skills, WorkExperience, PersonalIntroduction } from "./components";
+import { ParticleBackground, Navbar, Title, Skills, WorkExperience, PersonalIntroduction, Timeline } from "./components";
 import { Element } from 'react-scroll';
 const App = () => {
   return (
-    <div className='bg bg-auto bg-background relative'>
+    <div className='overflow-x-hidden bg bg-auto bg-background relative'>
       <ParticleBackground />
       <div className="">
         <Navbar />
@@ -13,12 +13,15 @@ const App = () => {
           <PersonalIntroduction />
           <Element name="experience" />
           <div className="h-80" />
+          <Timeline />
+          <Element name="fun" />
+          <div className="h-80" />
           <WorkExperience />
           <Element name="skills" />
           <div className="h-80" />
           <Skills />
-          <div className="h-80" />
-          <div className="text-white font-body text-3xl break-words md:text-4xl text-center" >More Coming Soon!</div>
+          {/* <div className="h-80" /> */}
+          <div className="text-white font-body text-3xl break-words md:text-4xl text-center" >..And More!</div>
         </div>
         <div className="h-80" />
       </div>
